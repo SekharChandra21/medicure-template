@@ -363,7 +363,7 @@
 
         async function fetchSymptoms() {
             try {
-                const response = await fetch("https://cloudsip202324.pythonanywhere.com/predict/symptoms");
+                const response = await fetch("https://health-view.onrender.com/predict/symptoms");
                 const data = await response.json();
                 return data;
             } catch (error) {
@@ -381,7 +381,7 @@
                 console.log(jsonData);
 
                 // Make a POST request to the API with JSON data
-                const response = await fetch('https://cloudsip202324.pythonanywhere.com/predict/', {
+                const response = await fetch('https://health-view.onrender.com/predict/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
